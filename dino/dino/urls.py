@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^stocks/', views.StockList.as_view()),
     url(r'',  include('index.urls')),
+    url(r'^contact/',  include('contact.urls')),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
