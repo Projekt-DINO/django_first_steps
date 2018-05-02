@@ -23,6 +23,7 @@ from api import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^stocks/', views.StockList.as_view()),
+    url(r'',  include('index.urls')),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
