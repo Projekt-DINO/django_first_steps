@@ -1,7 +1,7 @@
 # django_first_steps
 Python Django REST API First Steps
 
-
+<h3>Example by Alexnder Teusz</h3>
 
 **General**
 
