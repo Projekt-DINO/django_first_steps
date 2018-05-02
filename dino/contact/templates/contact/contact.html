@@ -1,0 +1,26 @@
+{% extends "contact/header.html" %}
+
+{% block content %}
+
+ <div  class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <a href="/"><h3 class="masthead-brand">DINO API</h3></a>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link " href="/">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="/contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+     {% include 'contact/includes/form.html' %}
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>API for the <a href="https://dino-app.de/">DINO Project</a>, by <a href="#" onclick="window.open('http://www.uni-duesseldorf.de/home/startseite.html')">Heinrich-Heine University Düsseldorf</a>.</p>
+        </div>
+      </footer>
+ </div>
+
+{% endblock %}
