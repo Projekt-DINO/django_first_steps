@@ -54,6 +54,10 @@ It looks like this for the example project:
 You can store your secret keys and other globals in the file `globals/globals.py`
 
 
+**Contact Site**
+
+To make our sample app a bit more interesting, I added a Contact Form. <br>
+Here is the tutorial [Django Python Contact Form Mail]("https://hellowebbooks.com/news/tutorial-setting-up-a-contact-form-with-django/")
 
 
 **Django Tutorial**
