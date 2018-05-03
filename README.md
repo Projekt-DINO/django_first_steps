@@ -53,6 +53,19 @@ It looks like this for the example project:
 
 You can store your secret keys and other globals in the file `globals/globals.py`
 
+**Globals**
+
+Because there are user specific information which other developers shouldn't read, you create a globals file. 
+In this file there are all variables which are different from user to user. In this case the file looks like this: <br>
+```
+GLOBAL_EMAIL = "mail@someServer.de"
+GLOBAL_PASS = "password"
+GLOBAL_PORT = 465 
+GLOBAL_SECURE = False //true if port is 587
+```
+
+These information are used by the contact form to send the email. You may understand why these variables are secret... <br>
+Another advantage is that all developers just have to change the globals.py file. So they don't have to spend time on finding all variables in the code.
 
 **Contact Site**
 
