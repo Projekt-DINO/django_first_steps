@@ -39,9 +39,9 @@ def contact(request):
             content = template.render(context)
 
             email = EmailMessage(
-                "New contact form submission",
+                "Support Request",
                 content,
-                "Your website" +'',
+                "DINO API" +'',
                 ['alexander.teusz@uni-duesseldorf.de'],
                 headers = {'Reply-To': contact_email }
             )

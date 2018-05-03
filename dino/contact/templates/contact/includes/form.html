@@ -1,9 +1,19 @@
 {% block content %}
-<h1>Contact</h1>
-<form role="form" action="" method="post">
+<h1 style="margin: 0 auto;">Support Contact</h1>
+<p style="margin: 0 auto">We'll try to answer you as soon as possible. Thank you for your interest in our API!</p>
+<form role="form" action="" method="post" style="margin-top: 2.5%">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Submit</button>
+    <p id="response"></p>
+    <div style="width: 50%; margin: auto;"><button type="submit" class="form-control" onclick="sendResponse()">Send Message</button></div>
 </form>
+
+<script>
+    function sendResponse() {
+        document.getElementById("response").innerHTML = "Message was successfully sent!";
+
+    }
+
+</script>
 
 {% endblock %}
