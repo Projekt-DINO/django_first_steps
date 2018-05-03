@@ -19,12 +19,13 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework.urlpatterns import format_suffix_patterns
 from api import views
+from contact import views as contactView
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^stocks/', views.StockList.as_view()),
-    url(r'',  include('index.urls')),
-    url(r'^contact/',  include('contact.urls')),
+    url(r'^api/admin/', admin.site.urls),
+    url(r'^api/stocks/', views.StockList.as_view()),
+    url(r'api/',  include('index.urls')),
+    url(r'^api/contact/',  contactView.contact, name='contact'),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

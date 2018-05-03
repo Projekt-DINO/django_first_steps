@@ -129,3 +129,10 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
     ]
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'user@dino-api.de'
+EMAIL_HOST_USER = 'teusz@smusy-dev.de'
+EMAIL_HOST_PASSWORD = 'Ellen1702'
+EMAIL_USE_TLS = False
+EMAIL_PORT = 465
