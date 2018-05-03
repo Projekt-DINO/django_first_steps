@@ -70,7 +70,7 @@ Another advantage is that all developers just have to change the globals.py file
 **Contact Site**
 
 To make our sample app a bit more interesting, I added a Contact Form. <br>
-Here is the tutorial [Django Python Contact Form Mail]("https://hellowebbooks.com/news/tutorial-setting-up-a-contact-form-with-django/")
+Here is the tutorial [Django Python Contact Form Mail](https://hellowebbooks.com/news/tutorial-setting-up-a-contact-form-with-django/)
 
 
 **Django Tutorial**
